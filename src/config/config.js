@@ -1,7 +1,7 @@
-const { config } = require("dotenv")
+const dotenv = require("dotenv")
 
 const Config = () => {
-    config();
+    dotenv.config();
     return {
         PORT: process.env.PORT,
         MONGO_URI: process.env.MONGO_URI,
